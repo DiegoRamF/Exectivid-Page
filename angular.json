@@ -6,12 +6,13 @@
   },
   "newProjectRoot": "projects",
   "projects": {
+
     "exectivid": {
       "projectType": "application",
       "schematics": {},
       "root": "",
       "sourceRoot": "src",
-      "prefix": "app",
+      "prefix": "",
       "architect": {
         "build": {
           "builder": "@angular/build:application",

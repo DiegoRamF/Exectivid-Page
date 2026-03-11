@@ -1,0 +1,28 @@
+<section class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5 min-h-screen bg-base-100">
+
+  <div class="col-span-1 bg-base-200 border-r border-base-300 p-6 flex flex-col shadow-sm">
+    <a
+      routerLink="/welcome"
+      class="text-3xl font-extrabold tracking-tight mb-8"
+    >
+      Exectivid
+    </a>
+
+    <nav class="flex flex-col gap-2 w-full">
+      @for (album of albumes(); track album.id) {
+        <a
+          class="btn btn-ghost justify-start w-full font-medium"
+          [routerLink]="['album', album.slug]"
+          routerLinkActive="btn-active"
+        >
+          {{ album.name }}
+        </a>
+      }
+    </nav>
+  </div>
+
+  <div class="col-span-1 md:col-span-3 lg:col-span-4 p-6 md:p-10 w-full overflow-y-auto">
+    <router-outlet />
+  </div>
+
+</section>

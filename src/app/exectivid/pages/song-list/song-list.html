@@ -1,0 +1,44 @@
+<div class="mt-8">
+
+  <div class="flex flex-col md:flex-row items-center md:items-end gap-6 mb-8 border-b border-base-300 pb-8">
+
+    <div class="shrink-0">
+      <img
+        [src]="albumInfo()?.image"
+        alt="Portada del álbum"
+        class="w-48 h-48 md:w-56 md:h-56 object-cover rounded-2xl shadow-xl border border-base-200 bg-base-300"
+      />
+    </div>
+
+    <div class="text-center md:text-left flex-1">
+
+      <p class="text-xs md:text-sm font-bold uppercase tracking-widest mb-1 md:mb-2">
+        {{ albumInfo()?.type }} • {{ albumInfo()?.year }}
+      </p>
+
+      <h1 class="text-3xl md:text-5xl lg:text-6xl font-extrabold text-base-content tracking-tight mb-2 md:mb-4">
+        {{ albumInfo()?.name }}
+      </h1>
+
+      <h2 class="text-lg md:text-xl font-semibold text-base-content/60">
+        Lista de canciones
+      </h2>
+
+    </div>
+
+  </div>
+
+  <ul class="flex flex-col gap-3">
+    @for (song of albumInfo()?.songs; track $index) {
+      <li class="flex items-center p-4 bg-base-100 border border-base-300 rounded-xl shadow-sm hover:shadow-md hover:border-primary transition-all duration-300 group">
+        <a
+          [routerLink]="[]"
+        >
+          <span class="text-lg font-medium text-base-content group-hover:text-primary transition-colors">
+            {{ $index + 1 }} • {{ song }}
+          </span>
+        </a>
+      </li>
+    }
+  </ul>
+</div>

@@ -3,6 +3,13 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@services/*": ["./src/app/exectivid/services/*"],
+      "@interfaces/*": ["./src/app/exectivid/interfaces/*"],
+      "@components/*": ["./src/app/exectivid/components/*"],
+    },
+
     "strict": true,
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
