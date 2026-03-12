@@ -1,9 +1,9 @@
 # Exectivid Page
 
-Una plataforma web dedicada a recopilar la discografía de **Exectivid**, artista independiente de Huancayo, Perú. Este proyecto nace de la admiración por su música y como un ejercicio práctico de desarrollo frontend moderno.
+Una plataforma web dedicada a recopilar la discografía de **Exectivid**, artista independiente de Huancayo, Perú. Este proyecto nace de la admiración a su música y como un ejercicio práctico de desarrollo frontend moderno.
 
 ## Sobre Exectivid
-Exectivid es un proyecto musical con raíces en Huancayo. Su estilo evoca la melancolía y sencillez de artistas como Ed Maverick, pero con un matiz mucho más **íntimo, personal y crudo**. A pesar de ser un artista emergente, su música conecta profundamente con quienes buscan sonidos auténticos y letras que se sienten como una confesión en privado.
+Exectivid es un proyecto musical independiente. Su estilo transmite la melancolía y sencillez de artistas como Ed Maverick, pero con un matiz mucho más **íntimo, personal y crudo**. A pesar de ser un artista emergente, su música conecta profundamente con sus fans y con sus letras genera un sentimiento de confesión privada.
 
 ## El Proyecto
 La aplicación funciona como un archivo digital donde se organiza su contenido musical:
@@ -15,23 +15,7 @@ La aplicación funciona como un archivo digital donde se organiza su contenido m
 Este proyecto fue construido utilizando herramientas de última generación para garantizar un rendimiento óptimo y un diseño estilizado:
 
 * **[Angular 21](https://angular.dev/):** El framework principal para la lógica y estructura de la aplicación.
-* **[Tailwind CSS](https://tailwindcss.com/):** Para un estilizado rápido y responsivo.
+* **[Tailwind CSS](https://tailwindcss.com/):** Para un estilizado rápido.
 * **[DaisyUI](https://daisyui.com/):** Componentes basados en Tailwind para lograr esa estética limpia y temática.
-
-## Instalación y Desarrollo
-
-Si deseas ejecutar este proyecto localmente:
-
-1. Clona el repositorio:
-   ```bash
-   git clone [https://github.com/DiegoRamF/Exectivid-Page.git](https://github.com/DiegoRamF/Exectivid-Page.git)
-2. Instala las dependencias:
-   ```
-   npm install
-4. Inicia el servidor de desarrollo:
-    ```
-   ng serve
-    ```
-6. Abre tu navegador en http://localhost:4200/.
 
 Hecho con pasión por un fan para la comunidad de Exectivid.
